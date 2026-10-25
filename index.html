@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#eee7dc">
+  <meta name="description" content="Discover anime, aesthetic, movie and statement posters at Heartlet Decor. Turn your walls into art.">
+  <meta property="og:title" content="Heartlet Decor | Turn Your Walls Into Art">
+  <meta property="og:description" content="Discover posters that transform ordinary spaces into something personal.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/hero-anime.jpg">
+  <title>Heartlet Decor | Turn Your Walls Into Art</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" id="home">
+    <a class="brand" href="#home" aria-label="Heartlet Decor home">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 64 64">
+          <path d="M32 53C25 46 8 34 8 21 8 11 20 7 27 17l5 7 5-7C44 7 56 11 56 21c0 13-17 25-24 32Z"/>
+          <path class="inner-heart" d="M32 44C25 38 15 30 15 22c0-5 6-8 10-2l7 9 7-9c4-6 10-3 10 2 0 8-10 16-17 22Z"/>
+          <path class="flourish" d="M20 49c-4 3-7 3-10 1m34-1c4 3 7 3 10 1"/>
+        </svg>
+      </span>
+      <span class="brand-copy"><strong>HEARTLET <i>DECOR</i></strong><small>TURN YOUR WALLS INTO ART.</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Open navigation"><span></span><span></span></button>
+    <nav class="nav" id="primaryNav" aria-label="Main navigation">
+      <a href="#home">Home</a><a href="#shop">Shop All</a><a href="#categories">Categories</a><a href="#bestsellers">Best Sellers</a><a href="#about">About</a><a href="#contact">Contact</a>
+      <button class="nav-icon" id="focusSearch" aria-label="Focus poster search">⌕</button>
+      <button class="nav-icon" id="openWishlist" aria-label="Open wishlist">♡ <span id="wishlistCount">0</span></button>
+      <button class="nav-icon cart-button" id="openCart" aria-label="Open order summary">Bag <span id="cartCount">0</span></button>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="heroTitle">
+      <div class="hero-bg" id="heroBg"></div>
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <p class="eyebrow hero-eyebrow"><span></span> ART FOR YOUR EVERYDAY</p>
+        <h1 id="heroTitle">Art That Speaks<br><em>Your Style.</em></h1>
+        <p class="hero-copy">Discover posters that transform ordinary spaces into something personal.</p>
+        <div class="hero-actions"><a class="button button-light" href="#shop">Explore Posters <span>↗</span></a><a class="button button-outline-light" href="#categories">Browse Collections</a></div>
+        <div class="hero-note"><span class="note-line"></span><span>YOUR SPACE. YOUR STORY.</span></div>
+      </div>
+      <div class="hero-index"><span>01</span><span class="index-line"></span><span>ART COLLECTION</span></div>
+    </section>
+
+    <section class="ticker" aria-label="Store tagline"><span>MAKE SPACE FOR ART</span><b>✳</b><span>FIND YOUR WALL'S PERSONALITY</span><b>✳</b><span>TURN YOUR WALLS INTO ART</span></section>
+
+    <section class="section intro-section" id="categories">
+      <div class="section-heading"><div><p class="eyebrow">FIND YOUR MOOD</p><h2>Art for every <em>kind of you.</em></h2></div><p class="section-aside">A little character for the walls you call yours.</p></div>
+      <div class="category-grid" id="categoryTiles">
+        <button class="category-tile category-dark" data-category="Anime Posters"><span class="category-number">01 / COLLECTION</span><strong>Anime<br>Universe</strong><span class="category-link">Explore collection ↗</span><span class="category-orbit">✳</span></button>
+        <button class="category-tile category-beige" data-category="Aesthetic Posters"><span class="category-number">02 / COLLECTION</span><strong>Soft<br>Aesthetics</strong><span class="category-link">Explore collection ↗</span><span class="category-orbit">◌</span></button>
+        <button class="category-tile category-white" data-category="Motivational Posters"><span class="category-number">03 / COLLECTION</span><strong>Words to<br>Live By</strong><span class="category-link">Explore collection ↗</span><span class="category-orbit">✳</span></button>
+        <button class="category-tile category-outline" data-category="Movie Posters"><span class="category-number">04 / COLLECTION</span><strong>Film<br>Frames</strong><span class="category-link">Explore collection ↗</span><span class="category-orbit">◌</span></button>
+      </div>
+    </section>
+
+    <section class="section shop-section" id="shop">
+      <div class="section-heading shop-heading"><div><p class="eyebrow">THE POSTER EDIT</p><h2>Find your <em>favourite.</em></h2></div><p class="section-aside">Your next wall upgrade starts here.</p></div>
+      <div class="catalogue-tools">
+        <label class="search-box"><span aria-hidden="true">⌕</span><input id="searchInput" type="search" placeholder="Search posters, moods, keywords..." aria-label="Search posters"></label>
+        <label class="select-wrap"><span class="sr-only">Filter by category</span><select id="categoryFilter"><option value="">All categories</option></select></label>
+        <label class="select-wrap"><span class="sr-only">Sort posters</span><select id="sortSelect"><option value="default">Sort: Featured</option><option value="price-asc">Price: Low to high</option><option value="price-desc">Price: High to low</option><option value="name">Name: A to Z</option></select></label>
+        <button class="text-button" id="clearFilters">Clear filters ↺</button>
+      </div>
+      <div class="results-line"><span id="resultCount">Showing posters</span><span class="small-label">MADE TO BE LOOKED AT.</span></div>
+      <div class="product-grid" id="productGrid" aria-live="polite"></div>
+      <div class="empty-state hidden" id="emptyState"><span class="empty-mark">♡</span><h3>No posters found</h3><p>Try another search or clear your filters.</p><button class="button button-dark" id="emptyClear">Clear filters</button></div>
+      <div class="load-more-wrap"><button class="button button-dark" id="loadMore">Load more posters <span>＋</span></button></div>
+    </section>
+
+    <section class="feature-band" id="bestsellers">
+      <div class="feature-copy"><p class="eyebrow">THE COMMUNITY FAVOURITES</p><h2>Best sellers,<br><em>when you say so.</em></h2><p>Only products you mark as best sellers in your product settings will appear here.</p><a href="#shop" class="button button-light">Shop the collection ↗</a></div>
+      <div class="best-preview" id="bestPreview"><div class="best-placeholder"><span>YOUR PICKS</span><strong>Good art<br>finds its wall.</strong><small>Mark products as bestSeller: true</small></div></div>
+    </section>
+
+    <section class="section featured-section" id="featured">
+      <div class="section-heading"><div><p class="eyebrow">HANDPICKED BY YOU</p><h2>Featured <em>pieces.</em></h2></div><p class="section-aside">Choose the pieces that deserve the spotlight.</p></div>
+      <div class="product-grid compact-grid" id="featuredGrid"></div>
+      <p class="empty-note" id="featuredEmpty">Your featured posters will appear here when you set <code>featured: true</code> in script.js.</p>
+    </section>
+
+    <section class="why-section section">
+      <div class="why-title"><p class="eyebrow">THE HEARTLET POINT OF VIEW</p><h2>Small details.<br><em>Big feeling.</em></h2></div>
+      <div class="why-items">
+        <article><span>01</span><h3>Your taste, your rules</h3><p>From anime worlds to quiet minimalism, make your space feel like yours.</p></article>
+        <article><span>02</span><h3>Art takes the lead</h3><p>Artwork gets room to breathe, with clean presentation and no visual clutter.</p></article>
+        <article><span>03</span><h3>Easy to enquire</h3><p>Send an order enquiry for the poster you love. We’ll keep the next step clear.</p></article>
+      </div>
+    </section>
+
+    <section class="about-section" id="about">
+      <div class="about-art"><div class="about-frame"><span>H / D</span><strong>Make room<br>for what<br><em>moves you.</em></strong><small>HEARTLET DECOR · EST. YOUR STORY</small></div></div>
+      <div class="about-copy"><p class="eyebrow">A NOTE FROM HEARTLET</p><h2>Your walls are<br>part of <em>your story.</em></h2><p>Heartlet Decor is a space for posters that express the things you love, the worlds you visit, and the ideas you want around you every day.</p><p>Choose a piece, make it yours, and give your room a little more personality.</p><a class="inline-link" href="#shop">Find your poster <span>↗</span></a></div>
+    </section>
+
+    <section class="section faq-section" id="faq">
+      <div class="section-heading"><div><p class="eyebrow">GOOD TO KNOW</p><h2>A few <em>answers.</em></h2></div></div>
+      <div class="faq-list">
+        <details><summary>How do I place an order? <span>＋</span></summary><p>Choose a poster, select “Order now,” and submit the order enquiry form. An enquiry is not a confirmed purchase until you receive confirmation from the store.</p></details>
+        <details><summary>Can I order a poster if it has no product link? <span>＋</span></summary><p>Yes. The email enquiry form works even when an external product link has not been added.</p></details>
+        <details><summary>How do I add my own posters? <span>＋</span></summary><p>Open script.js and edit the PRODUCTS array. Replace each placeholder name, imageUrl, price, category, and optional productUrl.</p></details>
+        <details><summary>How do I ask about delivery or returns? <span>＋</span></summary><p>Use the contact details below to ask before ordering. Add your actual delivery, refund, and return policies before publishing.</p></details>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="contact-intro"><p class="eyebrow">LET'S TALK ART</p><h2>Have a question?<br><em>We’re listening.</em></h2><p>Need help choosing a poster or want to ask about an order? Get in touch.</p><a class="contact-email" href="mailto:ytabhijeet05@gmail.com">ytabhijeet05@gmail.com ↗</a></div>
+      <form class="contact-form" id="contactForm">
+        <label>Your name<input name="name" required autocomplete="name" placeholder="Full name"></label>
+        <label>Your email<input name="email" type="email" required autocomplete="email" placeholder="you@example.com"></label>
+        <label>Your message<textarea name="message" rows="3" required placeholder="Tell us what's on your mind..."></textarea></label>
+        <button class="button button-light" type="submit">Prepare email <span>↗</span></button>
+        <p class="form-note">This opens your email app. It does not send anything automatically.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-top"><a class="brand footer-brand" href="#home"><span class="brand-mark"><svg viewBox="0 0 64 64"><path d="M32 53C25 46 8 34 8 21 8 11 20 7 27 17l5 7 5-7C44 7 56 11 56 21c0 13-17 25-24 32Z"/><path class="inner-heart" d="M32 44C25 38 15 30 15 22c0-5 6-8 10-2l7 9 7-9c4-6 10-3 10 2 0 8-10 16-17 22Z"/></svg></span><span class="brand-copy"><strong>HEARTLET <i>DECOR</i></strong><small>TURN YOUR WALLS INTO ART.</small></span></a><p>Art for the spaces that make you, you.</p><a class="back-top" href="#home">Back to top ↑</a></div>
+    <div class="footer-bottom"><span>© <span id="year"></span> Heartlet Decor</span><span><a href="#privacy" id="privacyLink">Privacy</a><a href="#terms" id="termsLink">Terms</a><a href="mailto:ytabhijeet05@gmail.com">Email</a></span><span>MADE FOR YOUR WALLS.</span></div>
+    <div class="policy-hidden" id="privacy"><h3>Privacy policy placeholder</h3><p>Before publishing, describe what customer information you collect, why you collect it, how it is stored, and how customers can contact you about their data.</p></div>
+    <div class="policy-hidden" id="terms"><h3>Terms placeholder</h3><p>Before publishing, add accurate pricing, order confirmation, delivery, cancellation, returns, and refund terms.</p></div>
+  </footer>
+
+  <dialog class="modal" id="productModal" aria-labelledby="modalTitle"><button class="modal-close" data-close="productModal" aria-label="Close details">×</button><div class="modal-product" id="modalProduct"></div></dialog>
+  <dialog class="modal order-modal" id="orderModal" aria-labelledby="orderTitle"><button class="modal-close" data-close="orderModal" aria-label="Close order form">×</button>
+    <div class="order-layout"><div class="order-aside"><p class="eyebrow">YOUR NEXT WALL FAVOURITE</p><h2 id="orderTitle">Let's make<br><em>an enquiry.</em></h2><div id="orderProductSummary"></div><p class="form-note">Submitting this form sends an order enquiry, not an automatic purchase confirmation.</p></div>
+    <form id="orderForm" class="order-form">
+      <div class="form-status" id="formStatus" role="status" aria-live="polite"></div>
+      <input type="hidden" name="product_id" id="orderProductId"><input type="hidden" name="product_name" id="orderProductName"><input type="hidden" name="unit_price" id="orderUnitPrice"><input type="hidden" name="product_url" id="orderProductUrl"><input type="hidden" name="total_amount" id="orderTotalHidden">
+      <label>Full name<input name="customer_name" required autocomplete="name" placeholder="Your full name"></label>
+      <label>Email address<input name="customer_email" type="email" required autocomplete="email" placeholder="you@example.com"></label>
+      <label>Phone number <span class="optional">(optional)</span><input name="customer_phone" type="tel" autocomplete="tel" placeholder="+91 ..."></label>
+      <div class="quantity-total"><label>Quantity<input name="quantity" id="orderQuantity" type="number" min="1" max="99" value="1" required></label><div><span>ESTIMATED TOTAL</span><strong id="orderTotal">₹0</strong></div></div>
+      <label>Delivery address <span class="optional">(if applicable)</span><textarea name="delivery_address" rows="2" placeholder="Add delivery address if needed"></textarea></label>
+      <label>Notes <span class="optional">(optional)</span><textarea name="notes" rows="2" placeholder="Any details you'd like to share?"></textarea></label>
+      <div class="order-review" id="orderReview"></div>
+      <button class="button button-dark submit-order" id="submitOrder" type="submit">Send order enquiry ↗</button>
+      <p class="form-note" id="emailSetupNote">Email ordering is not connected yet. Configure the Formspree endpoint in script.js before accepting live enquiries.</p>
+    </form></div>
+  </dialog>
+
+  <dialog class="modal drawer-modal" id="wishlistModal" aria-labelledby="wishlistTitle"><button class="modal-close" data-close="wishlistModal" aria-label="Close wishlist">×</button><h2 id="wishlistTitle">Your <em>wishlist.</em></h2><div id="wishlistItems"></div></dialog>
+  <dialog class="modal drawer-modal" id="cartModal" aria-labelledby="cartTitle"><button class="modal-close" data-close="cartModal" aria-label="Close order summary">×</button><h2 id="cartTitle">Your <em>order list.</em></h2><p class="drawer-intro">Save posters here while you browse, then start an enquiry.</p><div id="cartItems"></div><button class="button button-dark" id="enquireCart">Enquire about selected posters</button></dialog>
+  <a class="whatsapp-float hidden" id="whatsappButton" target="_blank" rel="noopener noreferrer" aria-label="Contact Heartlet Decor on WhatsApp" href="#"><span aria-hidden="true">◉</span><span>Chat with us</span></a>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
